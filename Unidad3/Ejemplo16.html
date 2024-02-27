@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anidamiento de estructuras</title>
+</head>
+<body>
+    <script>
+        // Ejemplo de estructura alternativa múltiple // (Anidada dentro de una alternativa doble). var Nota;
+        var Calificacion = "";
+        Nota = prompt("Introduce la nota del alumno: ", 0); Nota = Math.round(Nota);
+        if (Nota >= 0 && Nota <= 10)
+        {
+        switch (Math.round(Nota)) {
+        case 5: Calificacion="aprobado"; break
+        case 6: Calificacion="bien"; break
+        case 7:
+        case 8: Calificacion="notable"; break
+        case 9:
+        case 10: Calificacion="sobresaliente"; break
+        default: Calificacion="suspenso"; break 
+        } //end switch
+        }
+        else
+        {
+        Calificacion = "Nota erronea"
+        }
+        alert(Calificacion)
+        // Fin del programa.
+    </script>
+</body>
+</html>
